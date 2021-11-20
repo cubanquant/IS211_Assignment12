@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<h1>hello</h1>
+<body>
+    <form action="/email" method="post">
+        <p>email</p> 
+        <input type="text" name="email"></input>
+
+        <form action="/save" method="post">
+            <input type="submit" value="save"></input>
+        </form>
+    
+
+    <table class="center" border="1">
+    {% for email in email_list %}
+    <tr>
+        <td>{{ email }}</td>
+
+    </tr>
+    {% endfor %}
+    </table>
+</body>
+</html>
